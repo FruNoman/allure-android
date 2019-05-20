@@ -1,12 +1,8 @@
 package com.github.frunoman.allure.util;
 
 
-
-//import net.vrallev.android.context.AppContext;
-
-import java.io.IOException;
 import java.io.InputStream;
-import java.util.Objects;
+import java.lang.reflect.Method;
 import java.util.Properties;
 
 /**
@@ -14,7 +10,10 @@ import java.util.Properties;
  */
 public final class PropertiesUtils {
 
-
+    private static String instrumentationRegistry = "android.support.test.InstrumentationRegistry";
+    private static String getContextMethod = "getContext";
+    private static String getAssetsMethod = "getAssets";
+    private static String openMethod = "open";
 
     private static final String ALLURE_PROPERTIES_FILE = "allure.properties";
 
@@ -24,7 +23,15 @@ public final class PropertiesUtils {
     public static Properties loadAllureProperties() {
         Properties prop = new Properties();
         try {
-//            prop.load(AppContext.get().getAssets().open(ALLURE_PROPERTIES_FILE));
+            Class<?> instrumentationRegistryClazz = Class.forName(instrumentationRegistry);
+            Method getContext = instrumentationRegistryClazz.getMethod(getContextMethod);
+            Object context = getContext.invoke((Object) null);
+            Method getAssets = context.getClass().getMethod(getAssetsMethod);
+            Object assets = getAssets.invoke(context);
+            Method open = assets.getClass().getMethod(openMethod, String.class);
+            Object assetProps = open.invoke(assets, "allure.properties");
+            InputStream stream = (InputStream) assetProps;
+            prop.load(stream);
         } catch (Exception e) {
             e.printStackTrace();
         }
