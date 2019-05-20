@@ -2,264 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1dbfabb4-2fc3-4bfe-b082-7f3382e52019" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/frunoman/RenesasListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/frunoman/AndroidAllureListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/frunoman/RenesasRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/frunoman/AndroidAllureJunit4Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/aspects/StepsAspects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/aspects/StepsAspects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/util/PropertiesUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/util/PropertiesUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-android-0.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$12.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$13.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$14.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$15.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$16.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$17.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$18.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$19.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$20.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$21.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$22.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$23.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$24.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$25.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$26.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$27.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$28.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$29.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$30.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$31.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$$Lambda$9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/RenesasRunner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/Allure$$Lambda$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/Allure$$Lambda$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/Allure$$Lambda$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/Allure$$Lambda$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/Allure$$Lambda$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/Allure$$Lambda$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/Allure.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/AllureLifecycle$$Lambda$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/AllureLifecycle$$Lambda$10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/AllureLifecycle$$Lambda$11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/AllureLifecycle$$Lambda$12.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/AllureLifecycle$$Lambda$13.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/AllureLifecycle$$Lambda$14.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/AllureLifecycle$$Lambda$15.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/AllureLifecycle$$Lambda$16.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/AllureLifecycle$$Lambda$17.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/AllureLifecycle$$Lambda$18.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/AllureLifecycle$$Lambda$19.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/AllureLifecycle$$Lambda$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/AllureLifecycle$$Lambda$20.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/AllureLifecycle$$Lambda$21.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/AllureLifecycle$$Lambda$22.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/AllureLifecycle$$Lambda$23.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/AllureLifecycle$$Lambda$24.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/AllureLifecycle$$Lambda$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/AllureLifecycle$$Lambda$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/AllureLifecycle$$Lambda$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/AllureLifecycle$$Lambda$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/AllureLifecycle$$Lambda$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/AllureLifecycle$$Lambda$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/AllureLifecycle$$Lambda$9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/AllureLifecycle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/Attachment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/Description.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/Epic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/Epics.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/Feature.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/Features.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/Flaky.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/Issue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/Issues.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/Link.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/Links.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/Logger$LogCapture.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/Logger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/Muted.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/Owner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/Severity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/SeverityLevel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/Step.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/Stories.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/Story.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/TmsLink.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/TmsLinks.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/aspects/AttachmentsAspects.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/aspects/StepsAspects$$Lambda$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/aspects/StepsAspects$$Lambda$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/aspects/StepsAspects.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/internal/AllureStorage$$Lambda$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/internal/AllureStorage$$Lambda$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/internal/AllureStorage$$Lambda$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/internal/AllureStorage$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/internal/AllureStorage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/ContainerLifecycleListener$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/ContainerLifecycleListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/FixtureLifecycleListener$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/FixtureLifecycleListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier$$Lambda$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier$$Lambda$10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier$$Lambda$11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier$$Lambda$12.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier$$Lambda$13.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier$$Lambda$14.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier$$Lambda$15.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier$$Lambda$16.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier$$Lambda$17.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier$$Lambda$18.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier$$Lambda$19.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier$$Lambda$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier$$Lambda$20.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier$$Lambda$21.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier$$Lambda$22.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier$$Lambda$23.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier$$Lambda$24.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier$$Lambda$25.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier$$Lambda$26.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier$$Lambda$27.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier$$Lambda$28.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier$$Lambda$29.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier$$Lambda$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier$$Lambda$30.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier$$Lambda$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier$$Lambda$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier$$Lambda$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier$$Lambda$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier$$Lambda$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier$$Lambda$9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/LifecycleNotifier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/StepLifecycleListener$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/StepLifecycleListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/TestLifecycleListener$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/listener/TestLifecycleListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/util/AspectUtils$$Lambda$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/util/AspectUtils$$Lambda$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/util/AspectUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/util/NamingUtils$$Lambda$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/util/NamingUtils$$Lambda$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/util/NamingUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/util/Objects.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/util/PropertiesUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/util/ResultsUtils$$Lambda$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/util/ResultsUtils$$Lambda$10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/util/ResultsUtils$$Lambda$11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/util/ResultsUtils$$Lambda$12.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/util/ResultsUtils$$Lambda$13.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/util/ResultsUtils$$Lambda$14.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/util/ResultsUtils$$Lambda$15.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/util/ResultsUtils$$Lambda$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/util/ResultsUtils$$Lambda$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/util/ResultsUtils$$Lambda$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/util/ResultsUtils$$Lambda$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/util/ResultsUtils$$Lambda$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/util/ResultsUtils$$Lambda$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/util/ResultsUtils$$Lambda$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/util/ResultsUtils$$Lambda$9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/util/ResultsUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/allure/util/ServiceLoaderUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$12.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$13.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$14.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$15.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$16.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$17.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$18.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$19.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$20.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$21.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$22.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$23.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$24.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$25.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$26.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$27.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$28.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$29.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$30.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$31.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$$Lambda$9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/AllureJunit4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/DisplayName.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/Tag.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/junit4/Tags.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model/Allure2ModelJackson.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model/StageDeserializer$$Lambda$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model/StageDeserializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model/StatusDeserializer$$Lambda$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model/StatusDeserializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_api/AllureConstants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_api/AllureResultsReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_api/AllureResultsWriteException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_api/AllureResultsWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_api/AllureUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_api/FileSystemResultsReader$$Lambda$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_api/FileSystemResultsReader$$Lambda$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_api/FileSystemResultsReader$$Lambda$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_api/FileSystemResultsReader$$Lambda$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_api/FileSystemResultsReader$$Lambda$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_api/FileSystemResultsReader$$Lambda$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_api/FileSystemResultsReader$$Lambda$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_api/FileSystemResultsReader$$Lambda$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_api/FileSystemResultsReader$$Lambda$9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_api/FileSystemResultsReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_api/FileSystemResultsWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_api/ReadError.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_pojo/Allure2ModelJackson.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_pojo/Attachment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_pojo/ExecutableItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_pojo/FixtureResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_pojo/Label.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_pojo/Link.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_pojo/ObjectFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_pojo/Parameter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_pojo/Stage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_pojo/StageDeserializer$$Lambda$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_pojo/StageDeserializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_pojo/Status.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_pojo/StatusDeserializer$$Lambda$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_pojo/StatusDeserializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_pojo/StatusDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_pojo/StepResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_pojo/TestResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_pojo/TestResultContainer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_pojo/TestRunResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_pojo/WithAttachments.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_pojo/WithLinks.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_pojo/WithParameters.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_pojo/WithStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_pojo/WithStatusDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_pojo/WithSteps.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/github/frunoman/model_pojo/package-info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-allure-android-0.0.1.jar" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -275,23 +20,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-435">
-              <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+            <state relative-caret-position="120">
+              <caret line="95" column="33" selection-start-line="95" selection-start-column="24" selection-end-line="95" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/aspects/StepsAspects.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/junit4/AllureJunit4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+            <state relative-caret-position="30">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/model/Allure2ModelJackson.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/aspects/StepsAspects.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-30">
+              <caret line="55" column="85" selection-start-line="55" selection-start-column="85" selection-end-line="55" selection-end-column="85" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dependency-reduced-pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="645">
+              <caret line="73" column="14" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -304,15 +82,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/TmsLinks.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -349,24 +118,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
               <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/Owner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/Severity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -412,10 +163,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/github/frunoman/RenesasListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/frunoman/RenesasRunner.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/AllureLifecycle.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/frunoman/AndroidAllureListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/util/PropertiesUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/aspects/StepsAspects.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -478,17 +229,13 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="frunoman" type="462c0819:PsiDirectoryNode" />
-              <item name="allure" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="allureandroid" type="b2602c69:ProjectViewProjectNode" />
               <item name="allureandroid" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="frunoman" type="462c0819:PsiDirectoryNode" />
-              <item name="allure" type="462c0819:PsiDirectoryNode" />
-              <item name="aspects" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -500,6 +247,9 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Logcat" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
@@ -537,12 +287,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558101950666</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="refactor aspects">
+      <created>1558335250280</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1558335250280</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-2" width="1920" height="1082" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -573,23 +329,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create allure android test framework (without aspectj yet)" />
-    <option name="LAST_COMMIT_MESSAGE" value="create allure android test framework (without aspectj yet)" />
+    <MESSAGE value="refactor aspects" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor aspects" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/model_api/AllureResultsWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="53" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/model_api/AllureUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/model_api/ReadError.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -792,16 +535,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/model/Allure2ModelJackson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/model_api/FileSystemResultsWriter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -883,13 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-435">
-          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/TmsLinks.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -949,15 +675,122 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/aspects/StepsAspects.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/junit4/AllureJunit4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+        <state relative-caret-position="30">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/model/Allure2ModelJackson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/aspects/StepsAspects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30">
+          <caret line="55" column="85" selection-start-line="55" selection-start-column="85" selection-end-line="55" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dependency-reduced-pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="73" column="14" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="95" column="33" selection-start-line="95" selection-start-column="24" selection-end-line="95" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>allure-android</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
