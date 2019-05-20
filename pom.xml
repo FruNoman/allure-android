@@ -6,7 +6,7 @@
 
     <groupId>com.github.frunoman</groupId>
     <artifactId>allure-android</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4</version>
     <repositories>
         <repository>
             <id>jitpack.io</id>
