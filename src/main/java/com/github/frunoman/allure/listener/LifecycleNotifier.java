@@ -36,151 +36,211 @@ public class LifecycleNotifier implements ContainerLifecycleListener,
 
     @Override
     public void beforeTestSchedule(final TestResult result) {
-        testListeners.forEach(listener -> listener.beforeTestSchedule(result));
+        for(TestLifecycleListener listener:testListeners){
+            listener.beforeTestSchedule(result);
+        }
     }
 
     @Override
     public void afterTestSchedule(final TestResult result) {
-        testListeners.forEach(listener -> listener.afterTestSchedule(result));
+        for(TestLifecycleListener listener:testListeners){
+            listener.afterTestSchedule(result);
+        }
     }
 
     @Override
     public void beforeTestUpdate(final TestResult result) {
-        testListeners.forEach(listener -> listener.beforeTestUpdate(result));
+        for(TestLifecycleListener listener:testListeners){
+            listener.beforeTestUpdate(result);
+        }
     }
 
     @Override
     public void afterTestUpdate(final TestResult result) {
-        testListeners.forEach(listener -> listener.afterTestUpdate(result));
+        for(TestLifecycleListener listener:testListeners){
+            listener.afterTestUpdate(result);
+        }
     }
 
     @Override
     public void beforeTestStart(final TestResult result) {
-        testListeners.forEach(listener -> listener.beforeTestStart(result));
+        for(TestLifecycleListener listener:testListeners){
+            listener.beforeTestStart(result);
+        }
     }
 
     @Override
     public void afterTestStart(final TestResult result) {
-        testListeners.forEach(listener -> listener.afterTestStart(result));
+        for(TestLifecycleListener listener:testListeners){
+            listener.afterTestStart(result);
+        }
     }
 
     @Override
     public void beforeTestStop(final TestResult result) {
-        testListeners.forEach(listener -> listener.beforeTestStop(result));
+        for(TestLifecycleListener listener:testListeners){
+            listener.beforeTestStop(result);
+        }
     }
 
     @Override
     public void afterTestStop(final TestResult result) {
-        testListeners.forEach(listener -> listener.afterTestStop(result));
+        for(TestLifecycleListener listener:testListeners){
+            listener.afterTestStop(result);
+        }
     }
 
     @Override
     public void beforeTestWrite(final TestResult result) {
-        testListeners.forEach(listener -> listener.beforeTestWrite(result));
+        for(TestLifecycleListener listener:testListeners){
+            listener.beforeTestWrite(result);
+        }
     }
 
     @Override
     public void afterTestWrite(final TestResult result) {
-        testListeners.forEach(listener -> listener.afterTestWrite(result));
+        for(TestLifecycleListener listener:testListeners){
+            listener.afterTestWrite(result);
+        }
     }
 
     @Override
     public void beforeContainerStart(final TestResultContainer container) {
-        containerListeners.forEach(listener -> listener.beforeContainerStart(container));
+        for(ContainerLifecycleListener listener:containerListeners){
+            listener.beforeContainerStart(container);
+        }
     }
 
     @Override
     public void afterContainerStart(final TestResultContainer container) {
-        containerListeners.forEach(listener -> listener.afterContainerStart(container));
+        for(ContainerLifecycleListener listener:containerListeners){
+            listener.afterContainerStart(container);
+        }
     }
 
     @Override
     public void beforeContainerUpdate(final TestResultContainer container) {
-        containerListeners.forEach(listener -> listener.beforeContainerUpdate(container));
+        for(ContainerLifecycleListener listener:containerListeners){
+            listener.beforeContainerUpdate(container);
+        }
     }
 
     @Override
     public void afterContainerUpdate(final TestResultContainer container) {
-        containerListeners.forEach(listener -> listener.afterContainerUpdate(container));
+        for(ContainerLifecycleListener listener:containerListeners){
+            listener.afterContainerUpdate(container);
+        }
     }
 
     @Override
     public void beforeContainerStop(final TestResultContainer container) {
-        containerListeners.forEach(listener -> listener.beforeContainerStop(container));
+        for(ContainerLifecycleListener listener:containerListeners){
+            listener.beforeContainerStop(container);
+        }
     }
 
     @Override
     public void afterContainerStop(final TestResultContainer container) {
-        containerListeners.forEach(listener -> listener.afterContainerStop(container));
+        for(ContainerLifecycleListener listener:containerListeners){
+            listener.afterContainerStop(container);
+        }
     }
 
     @Override
     public void beforeContainerWrite(final TestResultContainer container) {
-        containerListeners.forEach(listener -> listener.beforeContainerWrite(container));
+        for(ContainerLifecycleListener listener:containerListeners){
+            listener.beforeContainerWrite(container);
+        }
     }
 
     @Override
     public void afterContainerWrite(final TestResultContainer container) {
-        containerListeners.forEach(listener -> listener.afterContainerWrite(container));
+        for(ContainerLifecycleListener listener:containerListeners){
+            listener.afterContainerWrite(container);
+        }
     }
 
     @Override
     public void beforeFixtureStart(final FixtureResult result) {
-        fixtureListeners.forEach(listener -> listener.beforeFixtureStart(result));
+        for(FixtureLifecycleListener listener:fixtureListeners){
+            listener.beforeFixtureStart(result);
+        }
     }
 
     @Override
     public void afterFixtureStart(final FixtureResult result) {
-        fixtureListeners.forEach(listener -> listener.afterFixtureStart(result));
+        for(FixtureLifecycleListener listener:fixtureListeners){
+            listener.afterFixtureStart(result);
+        }
     }
 
     @Override
     public void beforeFixtureUpdate(final FixtureResult result) {
-        fixtureListeners.forEach(listener -> listener.beforeFixtureUpdate(result));
+        for(FixtureLifecycleListener listener:fixtureListeners){
+            listener.beforeFixtureUpdate(result);
+        }
     }
 
     @Override
     public void afterFixtureUpdate(final FixtureResult result) {
-        fixtureListeners.forEach(listener -> listener.afterFixtureUpdate(result));
+        for(FixtureLifecycleListener listener:fixtureListeners){
+            listener.afterFixtureUpdate(result);
+        }
     }
 
     @Override
     public void beforeFixtureStop(final FixtureResult result) {
-        fixtureListeners.forEach(listener -> listener.beforeFixtureStop(result));
+        for(FixtureLifecycleListener listener:fixtureListeners){
+            listener.beforeFixtureStop(result);
+        }
     }
 
     @Override
     public void afterFixtureStop(final FixtureResult result) {
-        fixtureListeners.forEach(listener -> listener.afterFixtureStop(result));
+        for(FixtureLifecycleListener listener:fixtureListeners){
+            listener.afterFixtureStop(result);
+        }
     }
 
     @Override
     public void beforeStepStart(final StepResult result) {
-        stepListeners.forEach(listener -> listener.beforeStepStart(result));
+        for(StepLifecycleListener listener:stepListeners){
+            listener.beforeStepStart(result);
+        }
     }
 
     @Override
     public void afterStepStart(final StepResult result) {
-        stepListeners.forEach(listener -> listener.afterStepStart(result));
+        for(StepLifecycleListener listener:stepListeners){
+            listener.afterStepStart(result);
+        }
     }
 
     @Override
     public void beforeStepUpdate(final StepResult result) {
-        stepListeners.forEach(listener -> listener.beforeStepUpdate(result));
+        for(StepLifecycleListener listener:stepListeners){
+            listener.beforeStepUpdate(result);
+        }
     }
 
     @Override
     public void afterStepUpdate(final StepResult result) {
-        stepListeners.forEach(listener -> listener.afterStepUpdate(result));
+        for(StepLifecycleListener listener:stepListeners){
+            listener.afterStepUpdate(result);
+        }
     }
 
     @Override
     public void beforeStepStop(final StepResult result) {
-        stepListeners.forEach(listener -> listener.beforeStepStop(result));
+        for(StepLifecycleListener listener:stepListeners){
+            listener.beforeStepStop(result);
+        }
     }
 
     @Override
     public void afterStepStop(final StepResult result) {
-        stepListeners.forEach(listener -> listener.afterStepStop(result));
+        for(StepLifecycleListener listener:stepListeners){
+            listener.afterStepStop(result);
+        }
     }
 }

@@ -13,7 +13,7 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.aspectj.lang.reflect.MethodSignature;
 
 import java.nio.charset.StandardCharsets;
-import java.util.Objects;
+import java8.util.Objects;
 
 import static com.github.frunoman.allure.util.AspectUtils.getParametersMap;
 import static com.github.frunoman.allure.util.NamingUtils.processNameTemplate;

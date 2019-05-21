@@ -23,15 +23,15 @@ public final class PropertiesUtils {
     public static Properties loadAllureProperties() {
         Properties prop = new Properties();
         try {
-            Class<?> instrumentationRegistryClazz = Class.forName(instrumentationRegistry);
-            Method getContext = instrumentationRegistryClazz.getMethod(getContextMethod);
-            Object context = getContext.invoke((Object) null);
-            Method getAssets = context.getClass().getMethod(getAssetsMethod);
-            Object assets = getAssets.invoke(context);
-            Method open = assets.getClass().getMethod(openMethod, String.class);
-            Object assetProps = open.invoke(assets, "allure.properties");
-            InputStream stream = (InputStream) assetProps;
-            prop.load(stream);
+//            Class<?> instrumentationRegistryClazz = Class.forName(instrumentationRegistry);
+//            Method getContext = instrumentationRegistryClazz.getMethod(getContextMethod);
+//            Object context = getContext.invoke((Object) null);
+//            Method getAssets = context.getClass().getMethod(getAssetsMethod);
+//            Object assets = getAssets.invoke(context);
+//            Method open = assets.getClass().getMethod(openMethod, String.class);
+//            Object assetProps = open.invoke(assets, "allure.properties");
+//            InputStream stream = (InputStream) assetProps;
+//            prop.load(stream);
         } catch (Exception e) {
             e.printStackTrace();
         }

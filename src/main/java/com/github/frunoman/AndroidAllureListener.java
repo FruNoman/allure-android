@@ -17,6 +17,8 @@ import com.github.frunoman.model_pojo.StatusDetails;
 import com.github.frunoman.model_pojo.TestResult;
 
 
+import java8.util.stream.RefStreams;
+import java8.util.stream.StreamSupport;
 import org.junit.Ignore;
 import org.junit.runner.Description;
 import org.junit.runner.Result;
@@ -32,12 +34,15 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import java.util.Objects;
-import java.util.Optional;
+
+import java8.util.Objects;
+import java8.util.Optional;
+
 import java.util.UUID;
-import java.util.function.Function;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+
+import java8.util.function.Function;
+import java8.util.stream.Collectors;
+import java8.util.stream.Stream;
 
 import static com.github.frunoman.allure.util.ResultsUtils.getHostName;
 import static com.github.frunoman.allure.util.ResultsUtils.getStatus;
@@ -150,41 +155,45 @@ public class AndroidAllureListener extends RunListener {
     }
 
     private List<com.github.frunoman.model_pojo.Link> getLinks(final Description result) {
-        return Stream.of(
-                getAnnotationsOnClass(result, com.github.frunoman.allure.Link.class).stream().map(ResultsUtils::createLink),
-                getAnnotationsOnMethod(result, com.github.frunoman.allure.Link.class).stream().map(ResultsUtils::createLink),
-                getAnnotationsOnClass(result, com.github.frunoman.allure.Issue.class).stream().map(ResultsUtils::createLink),
-                getAnnotationsOnMethod(result, com.github.frunoman.allure.Issue.class).stream().map(ResultsUtils::createLink),
-                getAnnotationsOnClass(result, com.github.frunoman.allure.TmsLink.class).stream().map(ResultsUtils::createLink),
-                getAnnotationsOnMethod(result, com.github.frunoman.allure.TmsLink.class).stream().map(ResultsUtils::createLink)
-        ).reduce(Stream::concat).orElseGet(Stream::empty).collect(Collectors.toList());
+        Stream<com.github.frunoman.model_pojo.Link> stream = RefStreams.empty();
+        return stream.collect(Collectors.toList());
+//        return RefStreams.of(
+////                StreamSupport.stream(getAnnotationsOnClass(result, com.github.frunoman.allure.Link.class)).map(ResultsUtils::createLink),
+////                StreamSupport.stream(getAnnotationsOnMethod(result, com.github.frunoman.allure.Link.class)).map(ResultsUtils::createLink),
+////                StreamSupport.stream(getAnnotationsOnClass(result, com.github.frunoman.allure.Issue.class)).map(ResultsUtils::createLink),
+////                StreamSupport.stream(getAnnotationsOnMethod(result, com.github.frunoman.allure.Issue.class)).map(ResultsUtils::createLink),
+////                StreamSupport.stream(getAnnotationsOnClass(result, com.github.frunoman.allure.TmsLink.class)).map(ResultsUtils::createLink),
+////                StreamSupport.stream(getAnnotationsOnMethod(result, com.github.frunoman.allure.TmsLink.class)).map(ResultsUtils::createLink)
+//        ).reduce(RefStreams::concat).orElseGet(RefStreams::empty).collect(Collectors.toList());
     }
 
     private List<Label> getLabels(final Description result) {
-        return Stream.of(
-                getLabels(result, Epic.class, ResultsUtils::createLabel),
-                getLabels(result, Feature.class, ResultsUtils::createLabel),
-                getLabels(result, Story.class, ResultsUtils::createLabel),
-                getLabels(result, Severity.class, ResultsUtils::createLabel),
-                getLabels(result, Owner.class, ResultsUtils::createLabel),
-                getLabels(result, Tag.class, this::createLabel)
-        ).reduce(Stream::concat).orElseGet(Stream::empty).collect(Collectors.toList());
+        Stream<Label> stream = RefStreams.empty();
+        return stream.collect(Collectors.toList());
+//        return RefStreams.of(
+//                getLabels(result, Epic.class, ResultsUtils::createLabel),
+//                getLabels(result, Feature.class, ResultsUtils::createLabel),
+//                getLabels(result, Story.class, ResultsUtils::createLabel),
+//                getLabels(result, Severity.class, ResultsUtils::createLabel),
+//                getLabels(result, Owner.class, ResultsUtils::createLabel),
+//                getLabels(result, Tag.class, this::createLabel)
+//        ).reduce(RefStreams::concat).orElseGet(RefStreams::empty).collect(Collectors.toList());
     }
 
     private <T extends Annotation> Stream<Label> getLabels(final Description result, final Class<T> labelAnnotation,
                                                            final Function<T, Label> extractor) {
 
-        final List<Label> labels = getAnnotationsOnMethod(result, labelAnnotation).stream()
+        final List<Label> labels = StreamSupport.stream(getAnnotationsOnMethod(result, labelAnnotation))
                 .map(extractor)
                 .collect(Collectors.toList());
 
-        if (labelAnnotation.isAnnotationPresent(Repeatable.class) || labels.isEmpty()) {
-            final Stream<Label> onClassLabels = getAnnotationsOnClass(result, labelAnnotation).stream()
-                    .map(extractor);
-            labels.addAll(onClassLabels.collect(Collectors.toList()));
-        }
+//        if (labelAnnotation.isAnnotationPresent(Repeatable.class) || labels.isEmpty()) {
+//            final Stream<Label> onClassLabels =  StreamSupport.stream(getAnnotationsOnClass(result, labelAnnotation))
+//                    .map(extractor);
+//            labels.addAll(onClassLabels.collect(Collectors.toList()));
+//        }
 
-        return labels.stream();
+        return StreamSupport.stream(labels);
     }
 
     private Label createLabel(final Tag tag) {
@@ -193,39 +202,26 @@ public class AndroidAllureListener extends RunListener {
 
     private <T extends Annotation> List<T> getAnnotationsOnMethod(final Description result, final Class<T> clazz) {
         final T annotation = result.getAnnotation(clazz);
-        return Stream.concat(
-                extractRepeatable(result, clazz).stream(),
-                Objects.isNull(annotation) ? Stream.empty() : Stream.of(annotation)
-        ).collect(Collectors.toList());
+        Stream<T> stream = RefStreams.empty();
+        if (Objects.nonNull(annotation)) {
+            stream = RefStreams.of(annotation);
+        }
+        return stream.collect(Collectors.toList());
     }
 
     @SuppressWarnings("unchecked")
     private <T extends Annotation> List<T> extractRepeatable(final Description result, final Class<T> clazz) {
-        if (clazz != null && clazz.isAnnotationPresent(Repeatable.class)) {
-            final Repeatable repeatable = clazz.getAnnotation(Repeatable.class);
-            final Class<? extends Annotation> wrapper = repeatable.value();
-            final Annotation annotation = result.getAnnotation(wrapper);
-            if (Objects.nonNull(annotation)) {
-                try {
-                    final Method value = annotation.getClass().getMethod("value");
-                    final Object annotations = value.invoke(annotation);
-                    return Arrays.asList((T[]) annotations);
-                } catch (Exception e) {
-                    throw new IllegalStateException(e);
-                }
-            }
-        }
         return Collections.emptyList();
     }
 
-    private <T extends Annotation> List<T> getAnnotationsOnClass(final Description result, final Class<T> clazz) {
-        return Stream.of(result)
-                .map(Description::getTestClass)
-                .filter(Objects::nonNull)
-                .map(testClass -> testClass.getAnnotationsByType(clazz))
-                .flatMap(Stream::of)
-                .collect(Collectors.toList());
-    }
+//    private <T extends Annotation> List<T> getAnnotationsOnClass(final Description result, final Class<T> clazz) {
+//        return RefStreams.of(result)
+//                .map(Description::getTestClass)
+//                .filter(Objects::nonNull)
+//                .map(testClass -> testClass.getAnnotations(clazz))
+//                .flatMap(RefStreams::of)
+//                .collect(Collectors.toList());
+//    }
 
     private String getHistoryId(final Description description) {
         return md5(description.getClassName() + description.getMethodName());
@@ -279,9 +275,9 @@ public class AndroidAllureListener extends RunListener {
                         new Label().withName("testMethod").withValue(name),
                         new Label().withName("suite").withValue(suite),
                         new Label().withName("host").withValue(getHostName()),
-                        new Label().withName("thread").withValue(Thread.currentThread().getName()+Thread.currentThread().getId())
+                        new Label().withName("thread").withValue(Thread.currentThread().getName() + Thread.currentThread().getId())
                 );
-        testResult.getLabels().addAll(getLabels(description));
+//        testResult.getLabels().addAll(getLabels(description));
         getDisplayName(description).ifPresent(testResult::setName);
         getDescription(description).ifPresent(testResult::setDescription);
         return testResult;

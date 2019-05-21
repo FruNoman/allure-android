@@ -11,7 +11,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.Objects;
+import java8.util.Objects;
 
 import static com.github.frunoman.model_api.AllureUtils.generateTestResultContainerName;
 import static com.github.frunoman.model_api.AllureUtils.generateTestResultName;

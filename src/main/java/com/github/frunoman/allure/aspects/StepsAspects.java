@@ -16,8 +16,8 @@ import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.reflect.MethodSignature;
 
-import java.util.Objects;
-import java.util.Optional;
+import java8.util.Objects;
+import java8.util.Optional;
 import java.util.UUID;
 
 import static com.github.frunoman.allure.util.AspectUtils.getParameters;

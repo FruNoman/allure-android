@@ -7,8 +7,10 @@ import org.aspectj.lang.reflect.MethodSignature;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
-import java.util.stream.IntStream;
+import java8.util.stream.IntStreams;
+
+import java8.util.Objects;
+
 
 
 /**
@@ -21,7 +23,7 @@ public final class AspectUtils {
     }
 
     public static Parameter[] getParameters(final MethodSignature signature, final Object... args) {
-        return IntStream.range(0, args.length).mapToObj(index -> {
+        return IntStreams.range(0, args.length).mapToObj(index -> {
             final String name = signature.getParameterNames()[index];
             final String value = objectToString(args[index]);
             return new Parameter().withName(name).withValue(value);

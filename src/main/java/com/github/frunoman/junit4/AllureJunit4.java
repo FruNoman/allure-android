@@ -14,6 +14,8 @@ import com.github.frunoman.model_pojo.Status;
 import com.github.frunoman.model_pojo.StatusDetails;
 import com.github.frunoman.model_pojo.TestResult;
 
+import java8.util.stream.RefStreams;
+import java8.util.stream.StreamSupport;
 import org.junit.Ignore;
 import org.junit.runner.Description;
 import org.junit.runner.Result;
@@ -29,12 +31,15 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import java.util.Objects;
-import java.util.Optional;
+
+import java8.util.Objects;
+import java8.util.Optional;
+
 import java.util.UUID;
-import java.util.function.Function;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+
+import java8.util.function.Function;
+import java8.util.stream.Collectors;
+import java8.util.stream.Stream;
 
 import static com.github.frunoman.allure.util.ResultsUtils.getHostName;
 import static com.github.frunoman.allure.util.ResultsUtils.getStatus;
@@ -148,41 +153,41 @@ public class AllureJunit4 extends RunListener {
     }
 
     private List<com.github.frunoman.model_pojo.Link> getLinks(final Description result) {
-        return Stream.of(
-                getAnnotationsOnClass(result, com.github.frunoman.allure.Link.class).stream().map(ResultsUtils::createLink),
-                getAnnotationsOnMethod(result, com.github.frunoman.allure.Link.class).stream().map(ResultsUtils::createLink),
-                getAnnotationsOnClass(result, com.github.frunoman.allure.Issue.class).stream().map(ResultsUtils::createLink),
-                getAnnotationsOnMethod(result, com.github.frunoman.allure.Issue.class).stream().map(ResultsUtils::createLink),
-                getAnnotationsOnClass(result, com.github.frunoman.allure.TmsLink.class).stream().map(ResultsUtils::createLink),
-                getAnnotationsOnMethod(result, com.github.frunoman.allure.TmsLink.class).stream().map(ResultsUtils::createLink)
-        ).reduce(Stream::concat).orElseGet(Stream::empty).collect(Collectors.toList());
+        return RefStreams.of(
+                StreamSupport.stream(getAnnotationsOnClass(result, com.github.frunoman.allure.Link.class)).map(ResultsUtils::createLink),
+                StreamSupport.stream(getAnnotationsOnMethod(result, com.github.frunoman.allure.Link.class)).map(ResultsUtils::createLink),
+                StreamSupport.stream(getAnnotationsOnClass(result, com.github.frunoman.allure.Issue.class)).map(ResultsUtils::createLink),
+                StreamSupport.stream(getAnnotationsOnMethod(result, com.github.frunoman.allure.Issue.class)).map(ResultsUtils::createLink),
+                StreamSupport.stream(getAnnotationsOnClass(result, com.github.frunoman.allure.TmsLink.class)).map(ResultsUtils::createLink),
+                StreamSupport.stream(getAnnotationsOnMethod(result, com.github.frunoman.allure.TmsLink.class)).map(ResultsUtils::createLink)
+        ).reduce(RefStreams::concat).orElseGet(RefStreams::empty).collect(Collectors.toList());
     }
 
     private List<Label> getLabels(final Description result) {
-        return Stream.of(
+        return RefStreams.of(
                 getLabels(result, Epic.class, ResultsUtils::createLabel),
                 getLabels(result, Feature.class, ResultsUtils::createLabel),
                 getLabels(result, Story.class, ResultsUtils::createLabel),
                 getLabels(result, Severity.class, ResultsUtils::createLabel),
                 getLabels(result, Owner.class, ResultsUtils::createLabel),
                 getLabels(result, Tag.class, this::createLabel)
-        ).reduce(Stream::concat).orElseGet(Stream::empty).collect(Collectors.toList());
+        ).reduce(RefStreams::concat).orElseGet(RefStreams::empty).collect(Collectors.toList());
     }
 
     private <T extends Annotation> Stream<Label> getLabels(final Description result, final Class<T> labelAnnotation,
                                                            final Function<T, Label> extractor) {
 
-        final List<Label> labels = getAnnotationsOnMethod(result, labelAnnotation).stream()
+        final List<Label> labels = StreamSupport.stream(getAnnotationsOnMethod(result, labelAnnotation))
                 .map(extractor)
                 .collect(Collectors.toList());
 
         if (labelAnnotation.isAnnotationPresent(Repeatable.class) || labels.isEmpty()) {
-            final Stream<Label> onClassLabels = getAnnotationsOnClass(result, labelAnnotation).stream()
+            final Stream<Label> onClassLabels = StreamSupport.stream(getAnnotationsOnClass(result, labelAnnotation))
                     .map(extractor);
             labels.addAll(onClassLabels.collect(Collectors.toList()));
         }
 
-        return labels.stream();
+        return StreamSupport.stream(labels);
     }
 
     private Label createLabel(final Tag tag) {
@@ -191,9 +196,9 @@ public class AllureJunit4 extends RunListener {
 
     private <T extends Annotation> List<T> getAnnotationsOnMethod(final Description result, final Class<T> clazz) {
         final T annotation = result.getAnnotation(clazz);
-        return Stream.concat(
-                extractRepeatable(result, clazz).stream(),
-                Objects.isNull(annotation) ? Stream.empty() : Stream.of(annotation)
+        return RefStreams.concat(
+                StreamSupport.stream(extractRepeatable(result, clazz)),
+                Objects.isNull(annotation) ? RefStreams.empty() : RefStreams.of(annotation)
         ).collect(Collectors.toList());
     }
 
@@ -217,11 +222,11 @@ public class AllureJunit4 extends RunListener {
     }
 
     private <T extends Annotation> List<T> getAnnotationsOnClass(final Description result, final Class<T> clazz) {
-        return Stream.of(result)
+        return RefStreams.of(result)
                 .map(Description::getTestClass)
                 .filter(Objects::nonNull)
                 .map(testClass -> testClass.getAnnotationsByType(clazz))
-                .flatMap(Stream::of)
+                .flatMap(RefStreams::of)
                 .collect(Collectors.toList());
     }
 

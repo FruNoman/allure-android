@@ -16,6 +16,7 @@ import com.github.frunoman.model_pojo.Link;
 import com.github.frunoman.model_pojo.Status;
 import com.github.frunoman.model_pojo.StatusDetails;
 
+import java8.util.stream.RefStreams;
 import org.apache.tika.io.IOUtils;
 
 import java.io.IOException;
@@ -29,11 +30,11 @@ import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.List;
-import java.util.Objects;
-import java.util.Optional;
+import java8.util.Objects;
+import java8.util.Optional;
 import java.util.Properties;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+import java8.util.stream.Collectors;
+import java8.util.stream.Stream;
 
 import javax.xml.bind.DatatypeConverter;
 
@@ -165,7 +166,7 @@ public final class ResultsUtils {
     public static String getHostName() {
         final String fromProperty = System.getProperty(ALLURE_HOST_NAME_SYSPROP);
         final String fromEnv = System.getenv(ALLURE_HOST_NAME_ENV);
-        return Stream.of(fromProperty, fromEnv)
+        return RefStreams.of(fromProperty, fromEnv)
                 .filter(Objects::nonNull)
                 .findFirst()
                 .orElseGet(ResultsUtils::getRealHostName);
@@ -174,7 +175,7 @@ public final class ResultsUtils {
     public static String getThreadName() {
         final String fromProperty = System.getProperty(ALLURE_THREAD_NAME_SYSPROP);
         final String fromEnv = System.getenv(ALLURE_THREAD_NAME_ENV);
-        return Stream.of(fromProperty, fromEnv)
+        return RefStreams.of(fromProperty, fromEnv)
                 .filter(Objects::nonNull)
                 .findFirst()
                 .orElseGet(ResultsUtils::getRealThreadName);
@@ -199,7 +200,7 @@ public final class ResultsUtils {
     }
 
     public static Optional<String> firstNonEmpty(final String... items) {
-        return Stream.of(items)
+        return RefStreams.of(items)
                 .filter(Objects::nonNull)
                 .filter(item -> !item.isEmpty())
                 .findFirst();
@@ -270,7 +271,7 @@ public final class ResultsUtils {
         if (method.isAnnotationPresent(Description.class)) {
             if (method.getAnnotation(Description.class).useJavaDoc()) {
                 final String name = method.getName();
-                final List<String> parameterTypes = Stream.of(method.getParameterTypes())
+                final List<String> parameterTypes = RefStreams.of(method.getParameterTypes())
                         .map(Class::getTypeName)
                         .collect(Collectors.toList());
 

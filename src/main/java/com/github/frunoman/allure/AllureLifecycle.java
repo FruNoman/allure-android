@@ -24,10 +24,10 @@ import java.io.IOException;
 import java.io.InputStream;
 
 
-import java.util.Optional;
+import java8.util.Optional;
 import java.util.Properties;
 import java.util.UUID;
-import java.util.function.Consumer;
+import java8.util.function.Consumer;
 
 import static com.github.frunoman.allure.util.ServiceLoaderUtils.load;
 import static com.github.frunoman.model_api.AllureConstants.ATTACHMENT_FILE_SUFFIX;

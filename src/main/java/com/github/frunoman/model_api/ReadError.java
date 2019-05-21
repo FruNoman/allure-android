@@ -1,6 +1,6 @@
 package com.github.frunoman.model_api;
 
-import java.util.Objects;
+import java8.util.Objects;
 
 /**
  * @author charlie (Dmitry Baev).

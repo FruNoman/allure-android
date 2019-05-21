@@ -4,13 +4,10 @@ package com.github.frunoman.allure.util;
 
 import java.util.Arrays;
 import java.util.Map;
-import java.util.Objects;
-import java.util.Optional;
-import java.util.Spliterator;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-import java.util.stream.StreamSupport;
+import java8.util.Objects;
+import java8.util.Optional;
+import java8.util.Spliterator;
+import java8.util.stream.*;
 
 import static org.joor.Reflect.on;
 
@@ -63,12 +60,12 @@ public final class NamingUtils {
         }
         if (index < parts.length) {
             if (object instanceof Object[]) {
-                return Stream.of((Object[]) object)
+                return RefStreams.of((Object[]) object)
                         .map(child -> extractProperties(child, parts, index))
                         .collect(JOINER);
             }
             if (object instanceof Iterable) {
-                final Spliterator<?> iterator = ((Iterable) object).spliterator();
+                final Spliterator<?> iterator = (Spliterator<?>) ((Iterable) object).spliterator();
                 return StreamSupport.stream(iterator, false)
                         .map(child -> extractProperties(child, parts, index))
                         .collect(JOINER);

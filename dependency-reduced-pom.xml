@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.frunoman</groupId>
   <artifactId>allure-android</artifactId>
-  <version>0.0.3</version>
+  <version>0.0.4</version>
   <build>
     <plugins>
       <plugin>
@@ -35,7 +35,6 @@
           </execution>
         </executions>
         <configuration>
-          <defaultMethods>true</defaultMethods>
           <target>${target.java.version}</target>
         </configuration>
       </plugin>
@@ -57,11 +56,6 @@
             </configuration>
           </execution>
         </executions>
-      </plugin>
-      <plugin>
-        <groupId>com.simpligility.maven.plugins</groupId>
-        <artifactId>android-maven-plugin</artifactId>
-        <version>4.4.1</version>
       </plugin>
     </plugins>
   </build>
