@@ -1,4 +1,4 @@
-# Allure android reportlibrary
+# Allure android report library
 
 This library generate allure report for adnroid instrumented tests (Espresso,UiAutomator)
 
