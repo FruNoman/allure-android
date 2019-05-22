@@ -52,6 +52,8 @@ And create `allure.properties` file in this diractory. After that add standart a
 ```
 
 
+# Example android allure reporting project with aspects:
+<a href="https://github.com/FruNoman/AllureAndroidExample">AllureAndroidExample</a>
 
 For using `@Step` and `@Attach` annotations you should add <a hraf="https://github.com/Archinamon/android-gradle-aspectj">Archiamon AspectJ plugin</a>:
 ```        ...
@@ -64,8 +66,6 @@ For using `@Step` and `@Attach` annotations you should add <a hraf="https://gith
                id 'com.archinamon.aspectj'
            }
 ```
-# Example android allure reporting project with aspects:
-<a href="https://github.com/FruNoman/AllureAndroidExample">AllureAndroidExample</a>
 
 This library can't execute aspects from jar, so you shoud create StepAspects in your android flavor:
         ```import com.github.frunoman.allure.Allure;
