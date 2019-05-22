@@ -1,4 +1,6 @@
-# Allure android plugin 
+# Allure android reportlibrary
+
+This library generate allure report for adnroid instrumented tests (Espresso,UiAutomator)
 
 Usage
 -----
