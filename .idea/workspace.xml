@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1dbfabb4-2fc3-4bfe-b082-7f3382e52019" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/allure-android.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/frunoman/AndroidAllureListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/frunoman/AndroidAllureListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/AllureLifecycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/AllureLifecycle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/Logger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/aspects/AttachmentsAspects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/aspects/AttachmentsAspects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/aspects/StepsAspects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/aspects/StepsAspects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/internal/AllureStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/internal/AllureStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/listener/LifecycleNotifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/listener/LifecycleNotifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/util/AspectUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/util/AspectUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/util/NamingUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/util/NamingUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/util/PropertiesUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/util/PropertiesUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/util/ResultsUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/util/ResultsUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/frunoman/junit4/AllureJunit4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/frunoman/junit4/AllureJunit4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/frunoman/model/StageDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/frunoman/model/StageDeserializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/frunoman/model/StatusDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/frunoman/model/StatusDeserializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/frunoman/model_api/FileSystemResultsWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/frunoman/model_api/FileSystemResultsWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/frunoman/model_api/ReadError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/frunoman/model_api/ReadError.java" afterDir="false" />
-    </list>
+    <list default="true" id="1dbfabb4-2fc3-4bfe-b082-7f3382e52019" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,7 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
@@ -45,11 +24,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/AndroidAllureListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="146" column="29" selection-start-line="146" selection-start-column="29" selection-end-line="146" selection-end-column="29" />
+            <state relative-caret-position="1770">
+              <caret line="279" column="42" selection-start-line="279" selection-end-line="280" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -155,10 +134,11 @@
       <find>str</find>
       <find>IntStream</find>
       <find>extractRepeatable</find>
-      <find>getAnnotationsOnClass</find>
       <find>scheduleTestCase</find>
       <find>startTestCase</find>
       <find>getAnnotationsOnMethod</find>
+      <find>getAnnotationsOnClass</find>
+      <find>getAnnotations</find>
     </findStrings>
     <replaceStrings>
       <replace>com.github.frunoman.model</replace>
@@ -344,11 +324,6 @@
               <item name="frunoman" type="462c0819:PsiDirectoryNode" />
               <item name="model_api" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="allure-android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="allure-android" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -416,13 +391,20 @@
       <option name="project" value="LOCAL" />
       <updated>1558359333013</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="refactor all for java 6">
+      <created>1558452903570</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1558452903570</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-2" width="1920" height="1082" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25506938" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25506938" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -436,7 +418,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3297414" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3297414" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -453,7 +435,8 @@
     <MESSAGE value="create allure android test framework (without aspectj yet)" />
     <MESSAGE value="refactor aspects" />
     <MESSAGE value="for gradle !!!!!!!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="for gradle !!!!!!!!!" />
+    <MESSAGE value="refactor all for java 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor all for java 6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -871,20 +854,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/AndroidAllureListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1770">
+          <caret line="279" column="42" selection-start-line="279" selection-end-line="280" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/AndroidAllureListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="146" column="29" selection-start-line="146" selection-start-column="29" selection-end-line="146" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
