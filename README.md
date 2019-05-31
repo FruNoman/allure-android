@@ -131,9 +131,11 @@ This library can't execute aspects from jar, so you shoud create StepAspects in 
                    final String uuid = UUID.randomUUID().toString();
                    String returnState = "void";
                    String name = step.value();
-                   if(name.isEmpty()){
-                       name=methodSignature.getMethod().getName();
-                   }
+                    if (name.isEmpty()) {
+                      name = methodSignature.getMethod().getName();
+                    }else {
+                       name = processNameTemplate(step.value(),getParametersMap(methodSignature, joinPoint.getArgs()));
+                     }
                    final StepResult result = new StepResult()
                            .withName(name)
                            .withParameters(getParameters(methodSignature, joinPoint.getArgs()));
