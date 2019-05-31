@@ -4,6 +4,9 @@ package com.github.frunoman.allure.util;
 
 import java.util.Arrays;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import java8.util.Objects;
 import java8.util.Optional;
 import java8.util.Spliterator;
@@ -25,16 +28,15 @@ public final class NamingUtils {
     }
 
     public static String processNameTemplate(final String template, final Map<String, Object> params) {
-//        final Matcher matcher = Pattern.compile("\\{([^}]*)}").matcher(template);
-//        final StringBuffer sb = new StringBuffer();
-//        while (matcher.find()) {
-//            final String pattern = matcher.group(1);
-//            final String replacement = processPattern(pattern, params).orElseGet(matcher::group);
-//            matcher.appendReplacement(sb, Matcher.quoteReplacement(replacement));
-//        }
-//        matcher.appendTail(sb);
-//        return sb.toString();
-        return template;
+        final Matcher matcher = Pattern.compile("\\{([^}]*)\\}").matcher(template);
+        final StringBuffer sb = new StringBuffer();
+        while (matcher.find()) {
+            final String pattern = matcher.group(1);
+            final String replacement = processPattern(pattern, params).orElseGet(matcher::group);
+            matcher.appendReplacement(sb, Matcher.quoteReplacement(replacement));
+        }
+        matcher.appendTail(sb);
+        return sb.toString();
     }
 
     @SuppressWarnings("ReturnCount")
