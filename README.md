@@ -13,7 +13,7 @@ First add a maven repo link into your `repositories` block of module build file:
               
 Add dependency to your`dependencies` section:
 
-   ```implementation 'com.github.FruNoman:allure-android:0.0.6'```
+   ```implementation 'com.github.FruNoman:allure-android:0.0.7'```
    
 Add read/write storage permissions to AndroidManifest.xml:
   ```
@@ -53,6 +53,25 @@ And create `allure.properties` file in this diractory. After that add standart a
            allure.link.tms.pattern=http://localhost/testrail/index.php?/cases/view/{}
 ```
 
+Support features
+-----
+```
+           @DisplayName("Human-readable test name")
+           @Description("Some detailed test description")
+           @Step("Type {method} {0} {1}") 
+           @Link("https://example.org")
+           @Link(name = "allure", type = "mylink")
+           @Issue("432")
+           @TmsLink("test-2")
+           @Severity(SeverityLevel.CRITICAL)
+           @Story("Base support for bdd annotations")
+           @Epic("Allure examples")         // - Only for @Test methods
+           @Feature("Junit 4 support")      // - Only for @Test methods
+           @Owner("Dmytro Frolov")
+           @Tag("MyTag")
+           @Flaky
+           @Mutted
+ ```
 
 # Example android allure reporting project with aspects:
 <a href="https://github.com/FruNoman/AllureAndroidExample">AllureAndroidExample</a>
