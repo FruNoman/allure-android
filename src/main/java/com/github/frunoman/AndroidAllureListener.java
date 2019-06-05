@@ -143,7 +143,12 @@ public class AndroidAllureListener extends RunListener {
             Pattern pattern = Pattern.compile(".*(\\[\\d:.*])");
             Matcher matcher = pattern.matcher(result.getMethodName());
             if (matcher.matches()) {
-                Optional<String> parameters = Optional.of(matcher.group(1));
+                String param = matcher.group(1);
+                int maxLength = (param.length() < 100)?param.length():100;
+                if(param.length()>=100){
+                    param=param.substring(0,maxLength)+"...";
+                }
+                Optional<String> parameters = Optional.of(param);
                 return Optional.ofNullable(result.getAnnotation(DisplayName.class))
                         .map(DisplayName::value).flatMap(s -> parameters.map(s1 -> s + s1));
             }
