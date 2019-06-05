@@ -2,13 +2,11 @@ package com.github.frunoman;
 
 
 import com.github.frunoman.allure.*;
+import com.github.frunoman.allure.Link;
 import com.github.frunoman.allure.util.ResultsUtils;
 import com.github.frunoman.junit4.DisplayName;
 import com.github.frunoman.junit4.Tag;
-import com.github.frunoman.model_pojo.Label;
-import com.github.frunoman.model_pojo.Status;
-import com.github.frunoman.model_pojo.StatusDetails;
-import com.github.frunoman.model_pojo.TestResult;
+import com.github.frunoman.model_pojo.*;
 
 
 import java8.util.stream.RefStreams;
@@ -33,6 +31,8 @@ import java8.util.Objects;
 import java8.util.Optional;
 
 import java.util.UUID;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import java8.util.function.Function;
 import java8.util.stream.Collectors;
@@ -139,6 +139,15 @@ public class AndroidAllureListener extends RunListener {
     }
 
     private Optional<String> getDisplayName(final Description result) {
+        if (Objects.nonNull(result.getAnnotation(DisplayName.class))) {
+            Pattern pattern = Pattern.compile(".*(\\[\\d:.*])");
+            Matcher matcher = pattern.matcher(result.getMethodName());
+            if (matcher.matches()) {
+                Optional<String> parameters = Optional.of(matcher.group(1));
+                return Optional.ofNullable(result.getAnnotation(DisplayName.class))
+                        .map(DisplayName::value).flatMap(s -> parameters.map(s1 -> s + s1));
+            }
+        }
         return Optional.ofNullable(result.getAnnotation(DisplayName.class))
                 .map(DisplayName::value);
     }
@@ -153,7 +162,7 @@ public class AndroidAllureListener extends RunListener {
 //                StreamSupport.stream(getAnnotationsOnClass(result, com.github.frunoman.allure.Link.class)).map(ResultsUtils::createLink)
                 StreamSupport.stream(getAnnotationsOnMethod(result, com.github.frunoman.allure.Link.class)).map(ResultsUtils::createLink),
 //                StreamSupport.stream(getAnnotationsOnClass(result, com.github.frunoman.allure.Issue.class)).map(ResultsUtils::createLink),
-                StreamSupport.stream( getAnnotationsOnMethod(result, com.github.frunoman.allure.Issue.class)).map(ResultsUtils::createLink),
+                StreamSupport.stream(getAnnotationsOnMethod(result, com.github.frunoman.allure.Issue.class)).map(ResultsUtils::createLink),
 //                StreamSupport.stream(getAnnotationsOnClass(result, com.github.frunoman.allure.TmsLink.class)).map(ResultsUtils::createLink)
                 StreamSupport.stream(getAnnotationsOnMethod(result, com.github.frunoman.allure.TmsLink.class)).map(ResultsUtils::createLink)
         ).reduce(RefStreams::concat).orElseGet(RefStreams::empty).collect(Collectors.toList());
