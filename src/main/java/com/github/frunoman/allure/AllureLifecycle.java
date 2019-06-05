@@ -11,20 +11,17 @@ import com.github.frunoman.allure.util.Objects;
 import com.github.frunoman.allure.util.PropertiesUtils;
 import com.github.frunoman.model_api.AllureResultsWriter;
 import com.github.frunoman.model_api.FileSystemResultsWriter;
-import com.github.frunoman.model_pojo.FixtureResult;
-import com.github.frunoman.model_pojo.Stage;
-import com.github.frunoman.model_pojo.StepResult;
-import com.github.frunoman.model_pojo.TestResult;
-import com.github.frunoman.model_pojo.TestResultContainer;
-import com.github.frunoman.model_pojo.WithAttachments;
-import com.github.frunoman.model_pojo.Attachment;
+import com.github.frunoman.model_pojo.*;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
 
+import com.github.frunoman.model_pojo.Attachment;
 import java8.util.Optional;
+
+import java.util.Arrays;
 import java.util.Properties;
 import java.util.UUID;
 import java8.util.function.Consumer;
@@ -184,6 +181,14 @@ public class AllureLifecycle {
         storage.getTestResult(uuid).ifPresent(testResult -> {
             notifier.beforeTestUpdate(testResult);
             update.accept(testResult);
+            notifier.afterTestUpdate(testResult);
+        });
+    }
+
+    public void updateParameters(final String uuid, final Parameter[] parameters) {
+        storage.getTestResult(uuid).ifPresent(testResult -> {
+            notifier.beforeTestUpdate(testResult);
+            testResult.setParameters(Arrays.asList(parameters));
             notifier.afterTestUpdate(testResult);
         });
     }

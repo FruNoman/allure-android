@@ -4,8 +4,7 @@
     <list default="true" id="1dbfabb4-2fc3-4bfe-b082-7f3382e52019" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/frunoman/AndroidAllureListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/frunoman/AndroidAllureListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/AllureLifecycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/AllureLifecycle.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+            <state relative-caret-position="210">
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -44,8 +43,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/aspects/StepsAspects.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+            <state relative-caret-position="181">
+              <caret line="62" column="31" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/AllureLifecycle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="187" column="32" selection-start-line="187" selection-start-column="16" selection-end-line="187" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,12 +65,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/AllureLifecycle.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/internal/AllureStorage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="182" column="25" selection-start-line="182" selection-start-column="25" selection-end-line="182" selection-end-column="25" />
+            <state relative-caret-position="189">
+              <caret line="76" column="38" selection-start-line="76" selection-start-column="38" selection-end-line="76" selection-end-column="38" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2269#2270#0" expanded="true" />
+                <element signature="e#2319#2320#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,7 +101,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/AndroidAllureListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1887">
+            <state relative-caret-position="-1842">
               <caret line="148" column="61" selection-start-line="148" selection-start-column="61" selection-end-line="148" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -102,35 +114,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/model_pojo/TestResult.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="379" column="41" selection-start-line="379" selection-start-column="41" selection-end-line="379" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/model_pojo/Parameter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
               <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/net/sourceforge/streamsupport/streamsupport/1.7.0/streamsupport-1.7.0.jar!/java8/util/Optional.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
-              <folding>
-                <element signature="e#905#906#0" expanded="true" />
-                <element signature="e#963#964#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -203,10 +190,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/github/frunoman/junit4/DisplayName.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/aspects/StepsAspects.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/aspects/AttachmentsAspects.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/aspects/ParameterAspect.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/AllureLifecycle.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/frunoman/AndroidAllureListener.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/aspects/ParameterAspect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/AllureLifecycle.java" />
       </list>
     </option>
   </component>
@@ -262,7 +249,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/aspects" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -273,6 +260,7 @@
       <recent name="com.github.frunoman.allure" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/aspects" />
       <recent name="$PROJECT_DIR$/target" />
       <recent name="$PROJECT_DIR$/src/main/aspectj" />
       <recent name="$PROJECT_DIR$/src/main/java/com/github/frunoman/allure" />
@@ -350,14 +338,21 @@
       <option name="project" value="LOCAL" />
       <updated>1559732827722</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="refactor DisplayName annotation">
+      <created>1559741150175</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1559741150175</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1987" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27946874" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27946874" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -371,7 +366,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.33962265" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.33962265" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -392,14 +387,15 @@
     <MESSAGE value="working allure for android 15 api &#10;Not yet implement:&#10;    @Tag(&quot;TAG&quot;)&#10;    @Link(&quot;https://www.google.com/&quot;)&#10;    @TmsLink(value = &quot;444&quot;)&#10;    @Issue(value = &quot;455&quot;)&#10;    @Feature(&quot;Test feature&quot;)&#10;    @Severity(SeverityLevel.BLOCKER)&#10;    allure.properties" />
     <MESSAGE value="add @Step(&quot;{0} {method}&quot;)  detector" />
     <MESSAGE value="add @Display name with parameters" />
-    <option name="LAST_COMMIT_MESSAGE" value="add @Display name with parameters" />
+    <MESSAGE value="refactor DisplayName annotation" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor DisplayName annotation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/AllureLifecycle.java</url>
-          <line>166</line>
+          <line>163</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -419,13 +415,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/net/sourceforge/streamsupport/streamsupport/1.7.0/streamsupport-1.7.0.jar!/java8/util/stream/StreamSupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/annotation/Native.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -781,27 +770,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/aspects/ParameterAspect.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        <state relative-caret-position="210">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/aspects/StepsAspects.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/aspects/ParameterAspect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/AllureLifecycle.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/aspects/StepsAspects.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="182" column="25" selection-start-line="182" selection-start-column="25" selection-end-line="182" selection-end-column="25" />
+        <state relative-caret-position="181">
+          <caret line="62" column="31" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -810,7 +799,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/AndroidAllureListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1887">
+        <state relative-caret-position="-1842">
           <caret line="148" column="61" selection-start-line="148" selection-start-column="61" selection-end-line="148" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -821,10 +810,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/internal/AllureStorage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+        <state relative-caret-position="189">
+          <caret line="76" column="38" selection-start-line="76" selection-start-column="38" selection-end-line="76" selection-end-column="38" />
+          <folding>
+            <element signature="e#2269#2270#0" expanded="true" />
+            <element signature="e#2319#2320#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/frunoman/allure/AllureLifecycle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="187" column="32" selection-start-line="187" selection-start-column="16" selection-end-line="187" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
